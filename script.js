@@ -48,7 +48,8 @@
     const storyTop = window.scrollY + story.getBoundingClientRect().top;
     const distance = Math.max(story.offsetHeight - window.innerHeight, 1);
     const target = storyTop + (index / (labels.length - 1)) * distance;
-    window.scrollTo({ top: target, behavior: 'smooth' });
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: target, behavior: reduceMotion ? 'auto' : 'smooth' });
   };
 
   progressButtons.forEach((button, index) => button.addEventListener('click', () => goToScene(index)));
