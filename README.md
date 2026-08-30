@@ -1,5 +1,5 @@
-# Mats Praast
+# FIT & FUN Framily
 
-Persoonlijke sport- en ondernemerswebsite voor Mats Praast.
+Workouts, begeleiding en community met Mats Praast en Alissia Hansen.
 
 Live site: https://dekevinmt.github.io/mats-praast/
